@@ -3,7 +3,7 @@
 Summary:	Pure Python Expect-like module
 Name:		pexpect
 Version:	2.3
-Release:	10%{?dist}
+Release:	11%{?dist}
 License:	MIT
 Group:		Development/Languages
 URL:		http://pexpect.sourceforge.net/
@@ -52,6 +52,9 @@ rm -rf $RPM_BUILD_ROOT
 %{python_sitelib}/*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 2.3-11
+- Mass rebuild 2013-12-27
+
 * Tue Jul 09 2013 Marek Grac - 2.3-10
 - Fix issue with pxssh and timeout
   Resolves: rhbz#976504
