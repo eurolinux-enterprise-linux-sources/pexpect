@@ -1,0 +1,11 @@
+diff -urN a/pexpect-2.3/pxssh.py b/pexpect-2.3/pxssh.py
+--- a/pexpect-2.3/pxssh.py	2013-07-09 13:12:07.458885414 +0200
++++ b/pexpect-2.3/pxssh.py	2013-07-09 13:14:54.865687037 +0200
+@@ -131,6 +131,7 @@
+         # connecting to a heavily loaded machine I have.
+         # If latency is worse than these values then this will fail.
+ 
++        self.sendline()
+         self.read_nonblocking(size=10000,timeout=1) # GAS: Clear out the cache before getting the prompt
+         time.sleep(0.1)
+         self.sendline()
